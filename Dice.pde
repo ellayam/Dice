@@ -9,7 +9,7 @@ Die test;
 void draw()
 {
   int dieSum = 0;
-  background((int)(Math.random()*100) + 100,(int)(Math.random()*100) + 100,(int)(Math.random()*100) + 100);
+  background((int)(Math.random()*100) + 150,(int)(Math.random()*100) + 150,(int)(Math.random()*100) + 150);
   int sum = 0;
   for(int y = 25; y < 205; y += 75) {
     for(int x = 10; x < 300; x += 75) {
