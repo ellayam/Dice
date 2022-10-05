@@ -19,7 +19,7 @@ void draw()
     }
   }
   textSize(20);
-  text("Total number rolled: " + dieSum,45,270);
+  text("Total number rolled: " + dieSum,50,270);
 }
 
 void mousePressed()
