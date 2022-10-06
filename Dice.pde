@@ -20,6 +20,7 @@ void draw()
     }
   }
   textSize(20);
+  fill(0,0,0);
   text("Total number rolled: " + dieSum,150,270);
 }
 
@@ -48,41 +49,42 @@ class Die //models one single dice cube
   }
   void show()
   {
-    fill(255);
+    noStroke();
+    fill(255,255,255);
     rect(diceX,diceY,50,50);
-    fill(0);
+    fill((int)(Math.random()*100) + 100,(int)(Math.random()*100) + 100,(int)(Math.random()*100) + 100);
     if(numRolled == 1) {
-      ellipse(diceX+25,diceY+25,5,5);
+      ellipse(diceX+25,diceY+25,7,7);
       diceNum = 1;
     } else if(numRolled == 2) {
-      ellipse(diceX+15,diceY+15,5,5);
-      ellipse(diceX+35,diceY+35,5,5);
+      ellipse(diceX+15,diceY+15,7,7);
+      ellipse(diceX+35,diceY+35,7,7);
       diceNum = 2;
     } else if(numRolled == 3) {
-      ellipse(diceX+15,diceY+15,5,5);
-      ellipse(diceX+25,diceY+25,5,5);      
-      ellipse(diceX+35,diceY+35,5,5);
+      ellipse(diceX+15,diceY+15,7,7);
+      ellipse(diceX+25,diceY+25,7,7);      
+      ellipse(diceX+35,diceY+35,7,7);
       diceNum = 3;
     } else if(numRolled == 4) {
-      ellipse(diceX+15,diceY+15,5,5);
-      ellipse(diceX+35,diceY+15,5,5);
-      ellipse(diceX+15,diceY+35,5,5);
-      ellipse(diceX+35,diceY+35,5,5);
+      ellipse(diceX+15,diceY+15,7,7);
+      ellipse(diceX+35,diceY+15,7,7);
+      ellipse(diceX+15,diceY+35,7,7);
+      ellipse(diceX+35,diceY+35,7,7);
       diceNum = 4;
     } else if(numRolled == 5) {
-      ellipse(diceX+15,diceY+15,5,5);
-      ellipse(diceX+35,diceY+15,5,5);
-      ellipse(diceX+25,diceY+25,5,5);            
-      ellipse(diceX+15,diceY+35,5,5);
-      ellipse(diceX+35,diceY+35,5,5);
+      ellipse(diceX+15,diceY+15,7,7);
+      ellipse(diceX+35,diceY+15,7,7);
+      ellipse(diceX+25,diceY+25,7,7);            
+      ellipse(diceX+15,diceY+35,7,7);
+      ellipse(diceX+35,diceY+35,7,7);
       diceNum = 5;
     } else {
-      ellipse(diceX+15,diceY+15,5,5);
-      ellipse(diceX+35,diceY+15,5,5);
-      ellipse(diceX+15,diceY+25,5,5); 
-      ellipse(diceX+35,diceY+25,5,5);
-      ellipse(diceX+15,diceY+35,5,5);
-      ellipse(diceX+35,diceY+35,5,5);
+      ellipse(diceX+15,diceY+15,7,7);
+      ellipse(diceX+35,diceY+15,7,7);
+      ellipse(diceX+15,diceY+25,7,7); 
+      ellipse(diceX+35,diceY+25,7,7);
+      ellipse(diceX+15,diceY+35,7,7);
+      ellipse(diceX+35,diceY+35,7,7);
       diceNum = 6;
     }
   }
