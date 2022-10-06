@@ -2,6 +2,7 @@ void setup()
 {
   size(300,300);
   noLoop();
+  textAlign(CENTER);
 }
 
 Die test;
@@ -19,7 +20,7 @@ void draw()
     }
   }
   textSize(20);
-  text("Total number rolled: " + dieSum,50,270);
+  text("Total number rolled: " + dieSum,150,270);
 }
 
 void mousePressed()
