@@ -20,7 +20,7 @@ void draw()
     }
   }
   textSize(20);
-  fill(0,0,0);
+  fill(145,145,145);
   text("Total number rolled: " + dieSum,150,270);
 }
 
