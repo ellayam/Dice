@@ -5,7 +5,7 @@ void setup()
   textAlign(CENTER);
 }
 
-Die test;
+Die beans;
 
 void draw()
 {
@@ -14,8 +14,8 @@ void draw()
   int sum = 0;
   for(int y = 25; y < 205; y += 75) {
     for(int x = 10; x < 300; x += 75) {
-      test = new Die(x,y);
-      test.show();
+      beans = new Die(x,y);
+      beans.show();
       dieSum += diceNum;
     }
   }
